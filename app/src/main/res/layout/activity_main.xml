@@ -11,21 +11,42 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/go_button"
-        android:background="@mipmap/small_ice_jeep"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:background="#ffff7376"
         android:text="@string/go"
-        android:textSize="@android:dimen/app_icon_size" />
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="92dp" />
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/app_name"
-        android:id="@+id/hello_world1"
-        android:layout_marginTop="88dp"
-        android:layout_alignParentTop="true"
+        android:text="@string/next_button"
+        android:id="@+id/next_button"
+        android:background="#ffff7376"
+        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/intro"
+        android:background="#fffff8c3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/map_viwer"
+        android:id="@+id/button"
+        android:background="#ffff7376"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="144dp"
+        android:layout_toRightOf="@+id/go_button"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText" />
 
 
 </RelativeLayout>

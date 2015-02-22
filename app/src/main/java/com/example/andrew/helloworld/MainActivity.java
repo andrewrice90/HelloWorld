@@ -13,6 +13,7 @@ import android.widget.Toast;
 public class MainActivity extends ActionBarActivity {
 
     private static final int MESSAGE_REQUEST= 1;
+    private Button nextButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +27,17 @@ public class MainActivity extends ActionBarActivity {
                 startActivityForResult(intent, MESSAGE_REQUEST);
             }
         });
+        this.nextButton = (Button) this.findViewById(R.id.next_button);
+        this.nextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ImplicitIntentActivity.class);
+                startActivity(intent);
 
+            }
+        });
     }
+
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(requestCode == MESSAGE_REQUEST){

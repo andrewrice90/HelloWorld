@@ -4,7 +4,14 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="hello_there">Hello World</string>
-    <string name="go">Go</string>
-    <string name="success">You successfully clicked a button!</string>
+    <string name="go">Enter name toast example</string>
+    <string name="success">Successfully clicked Go button</string>
     <string name="done_button">Done</string>
+    <string name="next_button">Image Viewer</string>
+    <string name="implicit_button">View Image</string>
+    <string name="view_image2">View Image 2</string>
+    <string name="view_images_text">Click on the button to view your image</string>
+    <string name="intro">Welcome to this app - Select a peice of functionality</string>
+    <string name="map_viwer">View on Map</string>
+
 </resources>

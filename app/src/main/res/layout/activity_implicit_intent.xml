@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/implicit_button"
+        android:id="@+id/viewimage_button"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/viewimage_button2"
+        android:layout_alignStart="@+id/viewimage_button2"
+        android:minWidth="200dp"
+        android:layout_marginTop="52dp" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewimage_button2"
+        android:background="@mipmap/mhc_1st_team"
+        android:layout_marginBottom="93dp"
+        android:layout_alignParentBottom="true"
+        android:minWidth="200dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/view_images_text"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textClock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp" />
+</RelativeLayout>
