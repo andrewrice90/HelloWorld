@@ -10,10 +10,12 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
+        android:id="@+id/go_button"
         android:background="@mipmap/small_ice_jeep"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:text="@string/go"
+        android:textSize="@android:dimen/app_icon_size" />
 
     <TextView
         android:layout_width="wrap_content"
