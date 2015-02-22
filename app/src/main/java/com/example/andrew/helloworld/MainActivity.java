@@ -1,6 +1,7 @@
 package com.example.andrew.helloworld;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -8,6 +9,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import java.io.File;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -34,6 +37,18 @@ public class MainActivity extends ActionBarActivity {
                 Intent intent = new Intent(MainActivity.this, ImplicitIntentActivity.class);
                 startActivity(intent);
 
+            }
+        });
+
+        Button viewOnMapButton = (Button) this.findViewById(R.id.viewonmap_button);
+
+        viewOnMapButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String geoURIString = "geo:0,0?g=1600+Pennsylvania+Avenue+NW+Washington,+DC+20500";
+                Uri geoURI = Uri.parse(geoURIString);
+                Intent intent = new Intent(Intent.ACTION_VIEW, geoURI);
+                startActivity(intent);
             }
         });
     }
